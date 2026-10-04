@@ -278,3 +278,123 @@ input {
     font-weight: 600;
     color: #334155;
 }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .main-nav {
+        gap: 16px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 650px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-container {
+        min-height: 64px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .articles-section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image img {
+        height: 210px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .article-page {
+        padding: 50px 0;
+    }
+
+    .article-header {
+        text-align: left;
+    }
+
+    .article-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .article-meta {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .article-image {
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+
+}
